@@ -1,0 +1,60 @@
+cuda available with GPU: Tesla V100-PCIE-16GB
+==========Load Seed==========
+set_random_seed
+0
+==========Load Data==========
+==========Load Traininig Featuers==========
+==========Load Validation Featuers==========
+==========Load Testing Featuers==========
+==========Training Start==========
+Training Graphs:  78201
+Valid Graphs:  8716
+Test Graphs:  9497
+============Loading pretrained weights to generate initialization============
+============Creating new layers============
+============Creating Model============
+Training Graphs Batches:  2444
+Valid Graphs Batches:  273
+Test Graphs Batches:  297
+[0/34] timecost: 5392.20, lr: 0.000010, Train: (LOSS: 0.1971, MAE: 0.1971, RMSE: 0.2437, R2: -0.0055), Valid: (LOSS: 0.1954, MAE: 0.1954, RMSE: 0.2467, R2: -0.0223), PNorm: 175.1132, GNorm: 2.6248
+[1/34] timecost: 5379.65, lr: 0.000010, Train: (LOSS: 0.1921, MAE: 0.1921, RMSE: 0.2384, R2: 0.0416), Valid: (LOSS: 0.1906, MAE: 0.1906, RMSE: 0.2377, R2: 0.0516), PNorm: 175.1314, GNorm: 1.3259
+[2/34] timecost: 5374.79, lr: 0.000010, Train: (LOSS: 0.1900, MAE: 0.1900, RMSE: 0.2360, R2: 0.0604), Valid: (LOSS: 0.1889, MAE: 0.1889, RMSE: 0.2339, R2: 0.0811), PNorm: 175.1488, GNorm: 0.7256
+[3/34] timecost: 5370.48, lr: 0.000010, Train: (LOSS: 0.1884, MAE: 0.1884, RMSE: 0.2344, R2: 0.0755), Valid: (LOSS: 0.1875, MAE: 0.1875, RMSE: 0.2336, R2: 0.0835), PNorm: 175.1672, GNorm: 0.8026
+[4/34] timecost: 5381.02, lr: 0.000010, Train: (LOSS: 0.1868, MAE: 0.1868, RMSE: 0.2330, R2: 0.0841), Valid: (LOSS: 0.1861, MAE: 0.1861, RMSE: 0.2325, R2: 0.0911), PNorm: 175.1863, GNorm: 0.5830
+[5/34] timecost: 5372.56, lr: 0.000010, Train: (LOSS: 0.1859, MAE: 0.1859, RMSE: 0.2319, R2: 0.0917), Valid: (LOSS: 0.1862, MAE: 0.1862, RMSE: 0.2349, R2: 0.0719), PNorm: 175.2056, GNorm: 0.7373
+[6/34] timecost: 5373.00, lr: 0.000010, Train: (LOSS: 0.1847, MAE: 0.1847, RMSE: 0.2309, R2: 0.1006), Valid: (LOSS: 0.1857, MAE: 0.1857, RMSE: 0.2294, R2: 0.1147), PNorm: 175.2242, GNorm: 1.2147
+[7/34] timecost: 5385.70, lr: 0.000010, Train: (LOSS: 0.1838, MAE: 0.1838, RMSE: 0.2298, R2: 0.1069), Valid: (LOSS: 0.1849, MAE: 0.1849, RMSE: 0.2346, R2: 0.0744), PNorm: 175.2425, GNorm: 1.0463
+[8/34] timecost: 5370.03, lr: 0.000010, Train: (LOSS: 0.1827, MAE: 0.1827, RMSE: 0.2290, R2: 0.1117), Valid: (LOSS: 0.1835, MAE: 0.1835, RMSE: 0.2287, R2: 0.1186), PNorm: 175.2614, GNorm: 1.5812
+[9/34] timecost: 5385.01, lr: 0.000010, Train: (LOSS: 0.1821, MAE: 0.1821, RMSE: 0.2284, R2: 0.1170), Valid: (LOSS: 0.1858, MAE: 0.1858, RMSE: 0.2276, R2: 0.1256), PNorm: 175.2797, GNorm: 1.2877
+[10/34] timecost: 5371.11, lr: 0.000010, Train: (LOSS: 0.1813, MAE: 0.1813, RMSE: 0.2279, R2: 0.1214), Valid: (LOSS: 0.1838, MAE: 0.1838, RMSE: 0.2273, R2: 0.1276), PNorm: 175.2975, GNorm: 0.9200
+[11/34] timecost: 5373.67, lr: 0.000010, Train: (LOSS: 0.1803, MAE: 0.1803, RMSE: 0.2268, R2: 0.1288), Valid: (LOSS: 0.1827, MAE: 0.1827, RMSE: 0.2320, R2: 0.0928), PNorm: 175.3168, GNorm: 1.0490
+[12/34] timecost: 5372.43, lr: 0.000010, Train: (LOSS: 0.1797, MAE: 0.1797, RMSE: 0.2266, R2: 0.1288), Valid: (LOSS: 0.1823, MAE: 0.1823, RMSE: 0.2319, R2: 0.0947), PNorm: 175.3355, GNorm: 1.2695
+[13/34] timecost: 5366.21, lr: 0.000010, Train: (LOSS: 0.1786, MAE: 0.1786, RMSE: 0.2252, R2: 0.1416), Valid: (LOSS: 0.1832, MAE: 0.1832, RMSE: 0.2342, R2: 0.0769), PNorm: 175.3546, GNorm: 1.0906
+[14/34] timecost: 5362.39, lr: 0.000010, Train: (LOSS: 0.1778, MAE: 0.1778, RMSE: 0.2245, R2: 0.1460), Valid: (LOSS: 0.1820, MAE: 0.1820, RMSE: 0.2271, R2: 0.1295), PNorm: 175.3742, GNorm: 1.1194
+[15/34] timecost: 5365.23, lr: 0.000010, Train: (LOSS: 0.1771, MAE: 0.1771, RMSE: 0.2240, R2: 0.1478), Valid: (LOSS: 0.1813, MAE: 0.1813, RMSE: 0.2253, R2: 0.1432), PNorm: 175.3935, GNorm: 0.9580
+[16/34] timecost: 5376.07, lr: 0.000010, Train: (LOSS: 0.1762, MAE: 0.1762, RMSE: 0.2234, R2: 0.1531), Valid: (LOSS: 0.1810, MAE: 0.1810, RMSE: 0.2294, R2: 0.1126), PNorm: 175.4132, GNorm: 1.3372
+[17/34] timecost: 5385.31, lr: 0.000010, Train: (LOSS: 0.1756, MAE: 0.1756, RMSE: 0.2227, R2: 0.1585), Valid: (LOSS: 0.1809, MAE: 0.1809, RMSE: 0.2307, R2: 0.0994), PNorm: 175.4331, GNorm: 1.0182
+[18/34] timecost: 5377.02, lr: 0.000010, Train: (LOSS: 0.1747, MAE: 0.1747, RMSE: 0.2217, R2: 0.1669), Valid: (LOSS: 0.1849, MAE: 0.1849, RMSE: 0.2401, R2: 0.0287), PNorm: 175.4529, GNorm: 0.9436
+[19/34] timecost: 5386.90, lr: 0.000010, Train: (LOSS: 0.1741, MAE: 0.1741, RMSE: 0.2216, R2: 0.1674), Valid: (LOSS: 0.1815, MAE: 0.1815, RMSE: 0.2295, R2: 0.1095), PNorm: 175.4722, GNorm: 1.2907
+[20/34] timecost: 5559.25, lr: 0.000010, Train: (LOSS: 0.1733, MAE: 0.1733, RMSE: 0.2205, R2: 0.1731), Valid: (LOSS: 0.1800, MAE: 0.1800, RMSE: 0.2291, R2: 0.1106), PNorm: 175.4929, GNorm: 1.5911
+[21/34] timecost: 5430.59, lr: 0.000010, Train: (LOSS: 0.1726, MAE: 0.1726, RMSE: 0.2198, R2: 0.1805), Valid: (LOSS: 0.1792, MAE: 0.1792, RMSE: 0.2271, R2: 0.1291), PNorm: 175.5138, GNorm: 1.2826
+[22/34] timecost: 5518.29, lr: 0.000010, Train: (LOSS: 0.1718, MAE: 0.1718, RMSE: 0.2191, R2: 0.1864), Valid: (LOSS: 0.1798, MAE: 0.1798, RMSE: 0.2292, R2: 0.1123), PNorm: 175.5341, GNorm: 1.5908
+[23/34] timecost: 5492.78, lr: 0.000010, Train: (LOSS: 0.1710, MAE: 0.1710, RMSE: 0.2184, R2: 0.1880), Valid: (LOSS: 0.1802, MAE: 0.1802, RMSE: 0.2252, R2: 0.1431), PNorm: 175.5543, GNorm: 1.5262
+[24/34] timecost: 5547.54, lr: 0.000010, Train: (LOSS: 0.1702, MAE: 0.1702, RMSE: 0.2178, R2: 0.1944), Valid: (LOSS: 0.1795, MAE: 0.1795, RMSE: 0.2262, R2: 0.1346), PNorm: 175.5750, GNorm: 1.3124
+[25/34] timecost: 5417.85, lr: 0.000010, Train: (LOSS: 0.1695, MAE: 0.1695, RMSE: 0.2169, R2: 0.2001), Valid: (LOSS: 0.1796, MAE: 0.1796, RMSE: 0.2284, R2: 0.1193), PNorm: 175.5958, GNorm: 1.2590
+[26/34] timecost: 5366.82, lr: 0.000010, Train: (LOSS: 0.1685, MAE: 0.1685, RMSE: 0.2161, R2: 0.2052), Valid: (LOSS: 0.1815, MAE: 0.1815, RMSE: 0.2341, R2: 0.0754), PNorm: 175.6169, GNorm: 1.4937
+[27/34] timecost: 5349.06, lr: 0.000010, Train: (LOSS: 0.1678, MAE: 0.1678, RMSE: 0.2154, R2: 0.2102), Valid: (LOSS: 0.1792, MAE: 0.1792, RMSE: 0.2258, R2: 0.1355), PNorm: 175.6382, GNorm: 1.5439
+[28/34] timecost: 5366.71, lr: 0.000010, Train: (LOSS: 0.1670, MAE: 0.1670, RMSE: 0.2148, R2: 0.2153), Valid: (LOSS: 0.1797, MAE: 0.1797, RMSE: 0.2268, R2: 0.1313), PNorm: 175.6589, GNorm: 1.3447
+[29/34] timecost: 5360.18, lr: 0.000010, Train: (LOSS: 0.1662, MAE: 0.1662, RMSE: 0.2140, R2: 0.2207), Valid: (LOSS: 0.1781, MAE: 0.1781, RMSE: 0.2259, R2: 0.1340), PNorm: 175.6804, GNorm: 1.4352
+[30/34] timecost: 5354.48, lr: 0.000010, Train: (LOSS: 0.1654, MAE: 0.1654, RMSE: 0.2133, R2: 0.2246), Valid: (LOSS: 0.1790, MAE: 0.1790, RMSE: 0.2265, R2: 0.1290), PNorm: 175.7009, GNorm: 1.5817
+[31/34] timecost: 5368.37, lr: 0.000010, Train: (LOSS: 0.1644, MAE: 0.1644, RMSE: 0.2126, R2: 0.2313), Valid: (LOSS: 0.1790, MAE: 0.1790, RMSE: 0.2293, R2: 0.1089), PNorm: 175.7229, GNorm: 1.4320
+[32/34] timecost: 5371.31, lr: 0.000010, Train: (LOSS: 0.1637, MAE: 0.1637, RMSE: 0.2118, R2: 0.2331), Valid: (LOSS: 0.1801, MAE: 0.1801, RMSE: 0.2263, R2: 0.1313), PNorm: 175.7438, GNorm: 1.8286
+[33/34] timecost: 5374.21, lr: 0.000010, Train: (LOSS: 0.1628, MAE: 0.1628, RMSE: 0.2108, R2: 0.2435), Valid: (LOSS: 0.1786, MAE: 0.1786, RMSE: 0.2247, R2: 0.1436), PNorm: 175.7661, GNorm: 1.6006
+[34/34] timecost: 5369.57, lr: 0.000010, Train: (LOSS: 0.1618, MAE: 0.1618, RMSE: 0.2098, R2: 0.2500), Valid: (LOSS: 0.1785, MAE: 0.1785, RMSE: 0.2257, R2: 0.1395), PNorm: 175.7874, GNorm: 1.7850
+==========Training End==========
+==========Test and save the best model, whose valid loss is 0.1781==========
+=======================================
+mse: 0.17865609317415893
+rmse: 0.22550495340165866
+mae: 0.17865609317415893
+r2: 0.14431348771950128

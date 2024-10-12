@@ -1,0 +1,9 @@
+#!/bin/bash
+#SBATCH --job-name=BH_w_pretrain
+#SBATCH --nodes=1 --ntasks=5
+#SBATCH --gpus=1
+#SBATCH --mem=100GB
+#SBATCH --time=48:00:00
+#SBATCH --account=PCON0041
+
+perl Drone.pl JOB26/jobs/ JOB26/joblocks/ 

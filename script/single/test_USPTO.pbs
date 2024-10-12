@@ -1,0 +1,20 @@
+#!/bin/bash
+#SBATCH --job-name=USPTO_w_pretrain_best                   
+#SBATCH --nodes=1 --ntasks=5
+#SBATCH --gpus=1
+#SBATCH --mem=80GB
+#SBATCH --time=60:00:00
+#SBATCH --account=PCON0041
+
+
+
+
+
+
+#USPTO Training and testing w/w.o learned features
+#python /fs/ess/PCON0041/xiaohu/MAT/src/Model/mainUSPTOpretrain_new.py --epochs 35 --batch_size 32 --split 1 --use_pretrain 1 --eb_n_layers 8 --molecule_pooling_method 'con' --self_hidden_dim 256 --self_n_layers 5 --patience 15 --factor 0.950000 --init_lr 0.000010 --gnorm 1000.000000 --dropout 0.000000 --weight_decay 0.00000 --out_dir /fs/ess/PCON0041/xiaohu/MAT/results/final/uspto_new_wsigmoid/w > /fs/ess/PCON0041/xiaohu/MAT/results/final/uspto_new_wsigmoid/wpretrain.log 2>&1
+python /fs/ess/PCON0041/xiaohu/MAT/src/Model/mainUSPTOpretrain_new.py --epochs 35 --batch_size 32 --split 1 --use_pretrain 0 --eb_n_layers 8 --molecule_pooling_method 'con' --self_hidden_dim 256 --self_n_layers 5 --patience 10 --factor 0.900000 --init_lr 0.000010 --gnorm 1000.000000 --dropout 0.000000 --weight_decay 0.00000 --out_dir /fs/ess/PCON0041/xiaohu/MAT/results/final/uspto_new_wsigmoid/wo > /fs/ess/PCON0041/xiaohu/MAT/results/final/uspto_new_wsigmoid/wopretrain.log 2>&1  
+
+
+#Use trained USPTO model test CJHIF sampled data
+#python /fs/ess/PCON0041/xiaohu/MAT/src/Model/mainUSPTOpretrain_new_test.py --epochs 35 --batch_size 32 --split 1 --use_pretrain 0 --molecule_pooling_method 'con' --self_hidden_dim 256 --self_n_layers 5 --patience 10 --factor 0.8500000 --init_lr 0.000010 --gnorm 1000.000000 --dropout 0.000000 --weight_decay 0.000001 --out_dir /fs/ess/PCON0041/xiaohu/MAT/results/final/uspto_new_wsigmoid/sample_cj > /fs/ess/PCON0041/xiaohu/MAT/results/final/uspto_new_wsigmoid/wopretrain_test_sample_cj_5w_wo0.log 2>&1 

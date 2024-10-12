@@ -1,0 +1,23 @@
+{
+    "params":{"use_pretrain":"False"},
+
+    "net_params": {
+        "eb_n_layers": 8,
+        "self_n_layers": 6,
+        "self_num_heads": 16,
+        "self_input_dim": 28,
+        "self_hidden_dim": 256,
+        "self_out_dim": 256,
+        "edge_dim": 7,
+        "cross_num_heads": 16,
+        "cross_input_dim": 1024,
+        "cross_hidden_dim": 1024,
+        "cross_out_dim": 1024,
+        "dropout": 0.0,
+        "molecule_pooling_method": "con",
+        "residual": "True",
+        "readout": "False",
+        "layer_norm": "True",
+        "batch_norm": "False"
+    }
+}
