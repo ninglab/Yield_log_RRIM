@@ -15,7 +15,7 @@ This step generates the reactant, reagent, and product features needed for log-R
 The model comparison and the analyses between log-RRIM and T5chem can be found in the folder [`results_analysis`](results_analysis).
 
 ## Package requirements
-Important python packages and their versions in our station are listed below:
+Important python packages and their versions in our station are listed below: <br>
 python                    3.8.18 <br>
 torch                     2.1.0+cu121 <br>
 numpy                     1.21.6 <br>
