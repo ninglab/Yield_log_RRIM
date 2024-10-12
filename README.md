@@ -16,11 +16,11 @@ The comparison and the analyses between log-RRIM and T5chem can be found in the 
 
 ## Package requirements
 Important python packages and their versions in our station are listed below: <br>
-python                    3.8.18 <br>
-torch                     2.1.0+cu121 <br>
-numpy                     1.21.6 <br>
-scipy                     1.10.1 <br>
-rdkit                     2023.9.1 <br>
+python===3.8.18 <br>
+torch===2.1.0+cu121 <br>
+numpy===1.21.6 <br>
+scipy===1.10.1 <br>
+rdkit===2023.9.1 <br>
 
 ## Contact with us
 Email: hu.2823@osu.edu
