@@ -9,7 +9,7 @@ The sample code of this step is provided in the file [`USPTO_data_process.ipynb`
 This step generates the reactant, reagent, and product features needed for log-RRIM. The sample code is [`USPTO_features_process.ipynb`](USPTO_features_process.ipynb). Each dataset's generated reactant, reagent, and product features are also provided in the repository. 
 
 ## Training and testing
-[`test_BH.pbs`](test_BH.pbs) and [`test_USPTO.pbs`](test_USPTO.pbs) contain the commands to train and test the log-RRIM on different datasets use the basic atom features or the learned atom features, which is controlled by parameter '--use_pretrain 0'. 
+In scripts, [`test_BH.pbs`](test_BH.pbs) and [`test_USPTO.pbs`](test_USPTO.pbs) contain the commands to train and test the log-RRIM on different datasets use the basic atom features or the learned atom features, which is controlled by parameter '--use_pretrain 0'. 
 
 ## Analysis
 The comparison and the analyses between log-RRIM and T5chem can be found in the folder [`results_analysis`](results_analysis).
